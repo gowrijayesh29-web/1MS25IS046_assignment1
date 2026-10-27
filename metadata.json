@@ -1,0 +1,6 @@
+{
+  "name": "ScholarPulse - Step-by-Step Research Paper Agent",
+  "description": "An autonomous academic agent that deconstructs research topics step-by-step: decomposing sub-questions, identifying landmark papers and authors, synthesizing state-of-the-art findings, and uncovering open research gaps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
