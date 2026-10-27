@@ -1,0 +1,56 @@
+{
+  "app_name": "ScholarPulse - Step-by-Step Research Paper Agent",
+  "goal": "Develop a vibe coded app using AI Studio and store the files in GitHub",
+  "platform": "Google AI Studio (Build mode)",
+  "model": "Gemini 3.8 Flash",
+  "prompting_technique": ["chain-of-thought", "few-shot"],
+  "pipeline": [
+    {
+      "step": 1,
+      "name": "Sub-Questions Decomposition",
+      "description": "Breaks a topic into theoretical, algorithmic, systems, security/privacy, and frontier questions with rationales and priority tags."
+    },
+    {
+      "step": 2,
+      "name": "Key Papers and Seminal Authors",
+      "description": "Curates landmark papers with venue, year, summaries, arXiv/DOI links, BibTeX export, and key researcher profiles."
+    },
+    {
+      "step": 3,
+      "name": "Summary of Findings and Trade-offs",
+      "description": "Synthesizes cross-paper consensus, core formulations, benchmarks, and a comparative methods and trade-offs matrix."
+    },
+    {
+      "step": 4,
+      "name": "Research Gaps and Hypotheses",
+      "description": "Detects unresolved bottlenecks, explains why current methods fail, and proposes testable hypotheses."
+    }
+  ],
+  "features": [
+    "Interactive Flow Map (Topic -> Sub-questions -> Papers -> Findings -> Gaps)",
+    "Deep Dive Proposal Generator",
+    "Grounded Research Co-Pilot",
+    "Multi-Format Export (Markdown, BibTeX, JSON, print/PDF)",
+    "Curated Benchmark Topics"
+  ],
+  "quick_try_topics": [
+    "Federated Learning",
+    "Mechanistic Interpretability in LLMs",
+    "Diffusion Models for Protein Design",
+    "RAG Hallucination Mitigation",
+    "Post-Quantum Cryptography"
+  ],
+  "project_files": [
+    "metadata.json",
+    "index.html",
+    "package.json",
+    "server.ts",
+    "src/types/research.ts",
+    "src/utils/exportUtils.ts"
+  ],
+  "prompt_file": "prompt.txt",
+  "submission": {
+    "repository_visibility": "public",
+    "submit_via": "Google Form (repository link)"
+  }
+}
